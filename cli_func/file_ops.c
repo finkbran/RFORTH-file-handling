@@ -6,11 +6,11 @@
 #include <errno.h>      // library for error numbers
 
 // Function to list the contents of a directory
-void list_directory(const char* path) {
+void list_directory(const char* path) { // dir pointer and entry
     DIR* dir;
     struct dirent* entry;
 
-    if ((dir = opendir(path)) == NULL) {
+    if ((dir = opendir(path)) == NULL) { //if dir cant be opened
         perror("Failed to open directory");
         return;
     }

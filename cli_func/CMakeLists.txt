@@ -5,4 +5,6 @@ add_executable(
 	repl_loop.c
 	dir_list
 	dir_list.c
+	file_handling
+	file_handling.c
 )
